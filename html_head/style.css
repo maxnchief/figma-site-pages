@@ -1,0 +1,14 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to bottom right, rgb(28, 76, 171), rgb(88, 220, 220));
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    }
+    img {
+    width: 100%;
+    height: auto;
+    }

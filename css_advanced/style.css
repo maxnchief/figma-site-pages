@@ -1,0 +1,223 @@
+header {
+    background-image: url(images/pic_1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 40px;
+}
+header a{
+    
+}
+header img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: -38px 0 0 10px;
+}
+header nav a {
+
+    color: white;
+    text-decoration: none;
+
+
+}
+
+header section{
+    text-align: center;
+    color: white;
+}
+
+header section h2 {
+    color: white;
+    }
+
+button {
+    background-color: #C271FF;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 10px;
+
+}
+
+
+
+header section div h1{
+    font-size: 5em;
+    margin: 0;
+}
+
+header section img {
+border-radius: 50%;
+width: 100px;
+height: 100px;
+}
+body {
+
+
+}
+
+main section:first-of-type {
+background-color: #C271FF;
+padding: 20px 0;
+
+}
+
+main section:first-of-type img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float:left;
+    margin-left: 10px;
+}
+
+main section:first-of-type p {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30%;
+}
+
+main section blockquote
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    
+
+}
+
+
+main section:nth-of-type(2) >div:first-of-type  {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+main section:nth-of-type(2) div:first-of-type div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+main section:nth-of-type(2) div:first-of-type img {
+    height: 125px;
+    width: 200px;
+}
+
+main section:nth-of-type(2) div:nth-of-type(6) {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+
+main section:nth-of-type(2) >div:nth-of-type(2) img {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+
+main section:nth-of-type(2) h3 {
+    color: #C271FF;
+    margin: -25px 0 0 35px;
+}
+
+
+main section:nth-of-type(3){
+    background-color:#071629 ;
+    padding: 40px 0;
+}
+
+main section:nth-of-type(3) h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+main section:nth-of-type(3) h2{
+    color: white;
+    text-align: center;
+}
+
+main section:nth-of-type(3) p{
+    color: white;
+    text-align: center;
+}
+
+main section:nth-of-type(3) img {
+    height: 50px;
+    width: 50px;
+    display:flex;
+}
+
+main section:nth-of-type(3) >div >div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+main section:nth-of-type(3) button{
+    display: block;
+    margin: 0 auto;
+}
+
+main section:nth-of-type(4){
+    padding-bottom: 50px;
+}
+main section:nth-of-type(4) p {
+    color: grey;
+}
+
+main section:nth-of-type(4) >div:first-of-type  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    align-items: start;
+}
+
+main section:nth-of-type(4) h2 {
+    text-align: center;;
+}
+
+main section:nth-of-type(4) p {
+    text-align: left;
+}
+
+
+main section:nth-of-type(4) h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color:#071629 ;
+}
+
+footer div div img{
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+footer div div div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: -50px 0 0 0px;
+    margin-right: 5%;
+}
+
+footer p {
+    color: grey;
+    text-align: center;
+}
