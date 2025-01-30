@@ -1,1 +1,0 @@
-this is for html_advanced, and the use of a program called figma
