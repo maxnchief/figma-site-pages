@@ -1,22 +1,70 @@
+@font-face {
+    font-family: "Source Sans Pro Black";
+    src: url("./SourceSans/SourceSansPro-Black.otf")
+}
+@font-face {
+    font-family: "Source Sans Pro Bold";
+    src: url(./SourceSans/SourceSansPro-Bold.otf);
+}
+@font-face {
+    font-family: "Source Sans Pro Light";
+    src: url(./SourceSans/SourceSansPro-Light.otf);
+}
+@font-face {
+    font-family: "Source Sans Pro Regular";
+    src: url(./SourceSans/SourceSansPro-Regular.otf);
+}
+@font-face {
+    font-family: "Source Sans Pro SemiBold";
+    src: url(./SourceSans/SourceSansPro-SemiBold.otf);
+}
+@font-face {
+    font-family: "Source Sans Pro ExtraLight";
+    src: url(./SourceSans/SourceSansPro-ExtraLight.otf);
+}
+@font-face {
+    font-family: "Source Sans Pro ExtraLight Italic";
+    src: url(./SourceSans/SourceSansPro-ExtraLightIt.otf);
+}
+@font-face {
+    font-family: "Source Sans Pro Italic";
+    src: url(./SourceSans/SourceSansPro-It.otf);
+}
+
+* {
+    font-family: "Source Sans Pro Regular", sans-serif;
+}
+
+/**
+    * Header
+ */
+
 header {
     background-image: url(images/pic_1.jpg);
     background-size: cover;
+    width: 1440px;
+    height: 1093px;
     background-position: center;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 header a{
     
 }
+
+header >div div {
+    
+}
 header img {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    margin-left: 150px;
 }
 header nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 10px;
-    margin: -38px 0 0 10px;
+    gap: 60px;
+    margin-right: 150px;
+    margin-top: -30px;
 }
 header nav a {
 
@@ -29,11 +77,21 @@ header nav a {
 header section{
     text-align: center;
     color: white;
+    margin-top: 200px;
 }
 
 header section h2 {
     color: white;
-    }
+    font-family: "Source Sans Pro ExtraLight", sans-serif;
+}
+
+header div div p {
+    font-family: "Source Sans Pro ExtraLight Italic", sans-serif;
+}
+
+header section p {
+    font-family: "Source Sans Pro Bold", sans-serif;
+}
 
 button {
     background-color: #C271FF;
@@ -47,7 +105,8 @@ button {
 
 
 header section div h1{
-    font-size: 5em;
+    font-family: "Source Sans Pro Bold", sans-serif;
+    font-size: 7em;
     margin: 0;
 }
 
@@ -56,14 +115,16 @@ border-radius: 50%;
 width: 100px;
 height: 100px;
 }
-body {
 
-
-}
+/**
+    * Testimonial Section (First Section)
+ */
 
 main section:first-of-type {
 background-color: #C271FF;
 padding: 20px 0;
+width: 1440px;
+height: 392px;
 
 }
 
@@ -82,6 +143,14 @@ main section:first-of-type p {
     margin-left: 30%;
 }
 
+main section:first-of-type p:first-of-type {
+    font-family: "Source Sans Pro Bold", sans-serif;
+}
+
+main section:first-of-type p:nth-of-type(2) {
+    font-family: "Source Sans Pro Italic", sans-serif;
+}
+
 main section blockquote
 {
     display: flex;
@@ -92,7 +161,38 @@ main section blockquote
 
 }
 
+/**
+    * Tutorial Section (Second Section)
+ */
 
+main section:nth-of-type(2) {
+    margin-left: 50px;
+}
+    
+main section:nth-of-type(2) h1 {
+    font-family: "Source Sans Pro Light", sans-serif;
+    text-align: center;
+}
+main section:nth-of-type(2){
+    width: 1228px;
+    height: 450px;
+}
+
+main section:nth-of-type(2) p {
+    color:#C271FF;
+
+}
+
+main section:nth-of-type(2) div:first-of-type div p {
+    color: grey;
+}
+
+main section:nth-of-type(2) div div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
 main section:nth-of-type(2) >div:first-of-type  {
     display: flex;
     flex-direction: row;
@@ -108,9 +208,20 @@ main section:nth-of-type(2) div:first-of-type div {
 main section:nth-of-type(2) div:first-of-type img {
     height: 125px;
     width: 200px;
+    position: relative;
+    }
+
+    main section:nth-of-type(2) div:first-of-type img::after {
+        content: url(./images/play.png  );
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
 }
 
-main section:nth-of-type(2) div:nth-of-type(6) {
+main section:nth-of-type(2) div:nth-of-type(2) {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -128,10 +239,21 @@ main section:nth-of-type(2) h3 {
     margin: -25px 0 0 35px;
 }
 
+main section:nth-of-type(2) div:nth-of-type(3) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+/*
+    * Membership Section (Third Section)
+*/
 
 main section:nth-of-type(3){
     background-color:#071629 ;
     padding: 40px 0;
+    width: 1440px;
+    height: 502px;
 }
 
 main section:nth-of-type(3) h1 {
@@ -148,12 +270,14 @@ main section:nth-of-type(3) h2{
 main section:nth-of-type(3) p{
     color: white;
     text-align: center;
+    width: 70%;
+    margin-left: 52px;
 }
 
 main section:nth-of-type(3) img {
     height: 50px;
     width: 50px;
-    display:flex;
+    margin-left: 150px;
 }
 
 main section:nth-of-type(3) >div >div {
@@ -167,21 +291,41 @@ main section:nth-of-type(3) >div >div {
 main section:nth-of-type(3) button{
     display: block;
     margin: 0 auto;
+    margin-top: 100px;
+    font-size: 1.2em;
 }
+
+/*
+    * F.A.Q Section (Fourth Section)
+*/
 
 main section:nth-of-type(4){
     padding-bottom: 50px;
+    width: 920px;
+    height: 707px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 main section:nth-of-type(4) p {
     color: grey;
+    font-family: "Source Sans Pro Light", sans-serif;
+}
+
+main section:nth-of-type(4) h1 {
+    font-family: "Source Sans Pro ExtraLight", sans-serif;
+    margin-left: 475px;
+    width: 100%;
 }
 
 main section:nth-of-type(4) >div:first-of-type  {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
-    align-items: start;
+    grid-template-rows: auto;
+    gap: 100px;
+    width: 95%;
+    margin-left: 500px;
 }
 
 main section:nth-of-type(4) h2 {
@@ -199,9 +343,15 @@ main section:nth-of-type(4) h1 {
     font-weight: bold;
 }
 
+/*
+    * Footer
+*/
+
 
 footer {
     background-color:#071629 ;
+    width: 1440px;
+    height: 249px;
 }
 
 footer div div img{
@@ -220,4 +370,5 @@ footer div div div {
 footer p {
     color: grey;
     text-align: center;
+    margin-top: 4px;
 }
